@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>lobe</h1>
+        </div>
+        <ul>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Examples</a></li>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+        <button class="btn btn-full">Download</button>
+    </nav>
+    <div class="title">
+        <h1>lobo <span>Tour</span></h1>
+        <p>Lorem ipsum dolor sit, amet adipisicing elit. <br>Et distinctio officia nulla voluptatum err </P>
+
+
+
+
+
+        <div class="video-container">
+            <video id="myVideo">
+                <source src="./7864918-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="playButton" class="play-button">▶</button>
+        </div>
+        <div class="title">
+            <h1>Train your app <br>with lobe</h1>
+            <button class="btn btn-full">Download</button>
+        </div>
+        <hr class="hr-line">
+        <footer>
+            <div class="container">
+                <div class="logo-section">
+
+                    <h1>logo</h1>
+
+                </div>
+
+                <div class="footer-section">
+
+                    <ul class="footer-links">
+                        <h3>About</h3>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+
+                    <ul class="footer-links">
+                        <h3>General</h3>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Press Inquiry</a></li>
+                        <li><a href="#">Press Images</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+
+                    <ul class="footer-links">
+                        <h3>Resources</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+
+                </div>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const video = document.getElementById("myVideo");
+            const playButton = document.getElementById("playButton");
+
+            playButton.addEventListener("click", () => {
+                video.play();
+                playButton.classList.add("hidden");
+            });
+
+            video.addEventListener("pause", () => {
+                playButton.classList.remove("hidden");
+            });
+
+            video.addEventListener("ended", () => {
+                playButton.classList.remove("hidden");
+            });
+        </script>
+
+</body>
+
+</html>
